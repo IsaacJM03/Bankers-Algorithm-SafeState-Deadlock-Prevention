@@ -2,7 +2,6 @@ import java.util.*;
 
 public class DeadlockDetection {
 
-    // Function to implement Bunker's Algorithm
     public static boolean bunkersAlgorithm(int[] available, int[][] max, int[][] allocation) {
         int n = allocation.length;
         int m = available.length;
@@ -94,7 +93,6 @@ public class DeadlockDetection {
             }
         }
 
-        // Print safe sequence
         System.out.println("Safe sequence:");
         for (int i = 0; i < n; i++) {
             System.out.print("P" + safeSequence[i] + " ");
@@ -103,7 +101,7 @@ public class DeadlockDetection {
         return true;
     }
 
-    // Function to implement Deadlock Detection Algorithm
+    // Deadlock Detection Algorithm
     public static boolean detectDeadlock(int[] available, int[][] max, int[][] allocation) {
         int n = allocation.length;
         int m = available.length;
