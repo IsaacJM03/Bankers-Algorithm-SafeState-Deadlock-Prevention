@@ -2,7 +2,7 @@ import java.util.*;
 
 public class DeadlockDetection {
 
-    public static boolean bunkersAlgorithm(int[] available, int[][] max, int[][] allocation) {
+    public static boolean bankersAlgorithm(int[] available, int[][] max, int[][] allocation) {
         int n = allocation.length;
         int m = available.length;
         int[] work = Arrays.copyOf(available, m);
@@ -172,8 +172,8 @@ public class DeadlockDetection {
             {0, 0, 2}
         };
 
-        // Bunker's Algorithm
-        System.out.println("Bunker's Algorithm Result: " + bunkersAlgorithm(available, max, allocation));
+        // Banker's Algorithm
+        System.out.println("Banker's Algorithm Result: " + bankersAlgorithm(available, max, allocation));
 
         // Safe State Algorithm
         System.out.println("Safe State Algorithm Result: " + isSafeState(available, max, allocation));
